@@ -1,1 +1,2 @@
-## This is my Jot project
+# This is my Jot project
+## Cody Dennis 
