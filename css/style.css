@@ -1,5 +1,4 @@
-
- html, body{
+html, body {
    overflow-x: hidden;
  }
  body {
@@ -10,15 +9,17 @@
    font-family: "Montserrat", Helvetica, Arial, sans-serif;
  }
  h2 {
-   font-size:28px;
+   font-size: 28px;
    font-weight: normal;
    margin-bottom: 5px;
  }
+
  p {
-   font-size:16px;
-   line-height: 19px;
+   font-size: 16px;
+   line-height: 24px;
    font-weight: 100;
  }
+
 /* GRID */
 .container {
   margin-right: auto;
@@ -35,23 +36,33 @@
 .container:after {
   clear: both;
 }
+
+/* .one-half, one-third, and .one-fourth STYLES and MEDIA QUERIES */
 .one-half, .one-third, .one-fourth {
-  width:96%;
-  float:left;
-  position:relative;
+  width: 96%;
+  float: left;
+  position: relative;
   min-height: 1px;
-  margin:0 2% 20px;
+  margin: 0 2% 25px;
 }
 
+/* Tablet */
 @media (min-width: 768px) {
   .container {
     width: 750px;
   }
+
+  .one-half {
+    margin: auto;
+    width: 50%;
+  }
 }
 
+/* Laptop */
 @media (min-width: 992px) {
   .container {
     width: 970px;
+    margin: auto;
   }
   .one-half {
     width: 46%;
@@ -66,13 +77,14 @@
   }
 }
 
+/* Desktop */
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
 }
 
-/* HEADER */
+/* HEADER Styles and Media Queries */
 
 header {
   color: #FFFFFF;
@@ -81,57 +93,126 @@ header {
 }
 
 header nav {
-   padding: 1em 0;
- }
- header nav ul {
-   display: inline;
-   text-align: right;
-   float: right;
-   margin: 0;
- }
- header nav ul > li {
-   list-style-type: none;
-   display: inline-block;
-   margin: 0 15px;
- }
- header nav ul > li.btn-outline {
-   padding: 10px 15px;
-   border: 2px solid #FFFFFF;
-   border-radius: 4px;
- }
- header nav ul > li.btn-outline:hover {
-   background: #FFFFFF;
- }
- header nav ul > li > a {
-   color: #FFFFFF;
-   text-decoration: none;
- }
- header nav ul > li.btn-outline:hover > a {
-   color: #34495E;
- }
+  padding: 1em 0;
+}
 
- header .hero {
-   text-align: center;
-   display: block;
-   position: relative;
- }
+/* header nav img styles and media queries */
+header nav img {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: 50px;
+}
 
- header .hero h1{
-   font-size: 48px;
-   font-weight: normal;
-   margin: 95px 0 0;
- }
+@media (min-width: 768px) {
+  header nav img {
+    margin: 0;
+  }
+}
 
+/* header nav ul styles and media queries */
+header nav ul {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding-right: 35px;
+}
+
+@media (min-width: 768px) {
+  header nav ul {
+  display: inline;
+  text-align: right;
+  float: right;
+  padding-right: 0px;
+}
+}
+
+header nav ul > li {
+  list-style-type: none;
+  display: inline-block;
+  margin:0 15px;
+}
+header nav ul > li.btn-outline {
+  padding:10px 15px;
+  border:2px solid #FFFFFF;
+  border-radius: 4px;
+}
+header nav ul > li.btn-outline:hover {
+  background:#FFFFFF;
+}
+header nav ul > li > a {
+  color:#FFFFFF;
+  text-decoration: none;
+}
+header nav ul > li.btn-outline:hover > a {
+  color:#34495E;
+}
+
+header .hero {
+  text-align: center;
+  display: block;
+  position: relative;
+}
+
+/* header .hero h1 styles and media queries */
+header .hero h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin: 15px 0 0;
+}
+
+@media (min-width: 768px){
+  header .hero h1 {
+    font-size: 38px;
+    margin: 45px 0 0;
+  }
+}
+
+@media (min-width: 1200px){
+  header .hero h1 {
+    font-size: 48px;
+  }
+}
+
+/* header .hero p styles and media queries */
 header .hero p {
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 100;
   margin: 10px 0 40px;
 }
 
+@media (min-width: 768px) {
+  header .hero p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header .hero p {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+/* header .hero img styles and media queries */
 header .hero img {
   display: block;
   margin: 3em auto 0;
+  width: auto;
+  height: 230px;
+}
+
+@media (min-width: 768px){
+  header .hero img {
+    height: 450px;
+  }
+}
+
+@media (min-width: 1200px){
+  header .hero img {
+    height: 500px;
+  }
 }
 
 /* BUTTONS */
