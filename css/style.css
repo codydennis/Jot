@@ -420,14 +420,13 @@ header .hero img {
 
 /* Footer styles and media queries */
 footer {
-  background-color: #002A55;
-  background-image: linear-gradient(to top, #118BFE 0%, #118BFE 50%, #002A55 50%, #4495E 100%);
+  background-color: #C6E4FF;
   color: #FFFFFF;
-  height: 150px;
+  height: 200px;
   position: relative;
   overflow: hidden;
   z-index: 0;
-  padding: 2em 0;
+  padding: 0;
 }
 
   @media (min-width: 992px) {
@@ -442,9 +441,16 @@ footer {
 /* footer p, footer nav ul styles and media queries */
 footer p, footer nav ul {
   font-size: 14px;
+  color: #333333;
   font-weight: 100;
   text-align: center;
   margin: 10px auto 0;
+}
+
+@media (min-width: 992px) {
+  footer p, footer nav ul {
+    color: #FFFFFF;
+  }
 }
 
 @media (min-width: 992px) {
@@ -460,8 +466,14 @@ footer nav ul li {
 }
 
 footer nav ul li a {
-  color: #FFFFFF;
+  color: #333333;
   text-decoration: none;
+}
+
+@media (min-width: 992px) {
+  footer nav ul li a {
+    color: #FFFFFF;
+  }
 }
 
 /* footer .logo styles and media queries */
@@ -471,12 +483,13 @@ footer .logo {
   margin: auto;
   width: auto;
   height: 50px;
-  padding-top: 10px;
+  padding: 5px;
 }
 @media (min-width: 992px) {
 footer .logo {
   margin: 0 auto;
   display: block;
+  padding-bottom: 30px;
 }
 }
 
@@ -487,4 +500,3 @@ footer .logo {
     height: 100px;
     padding: 22px 0;
   }
-}
